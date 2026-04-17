@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labour Connect | Fakenham & Broadland</title>
+    <style>
+        :root {
+            --labour-red: #E4003B;
+            --dark-grey: #222;
+            --light-bg: #f9f9f9;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            background-color: var(--light-bg);
+            color: #333;
+        }
+        /* Top Branding Header */
+        .main-header {
+            background: white;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            border-bottom: 4px solid var(--labour-red);
+        }
+        .rose-logo {
+            font-size: 32px;
+            margin-right: 15px;
+        }
+        .brand-text {
+            color: var(--labour-red);
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: -0.5px;
+        }
+        /* Navigation Topbar */
+        .topbar {
+            background-color: var(--dark-grey);
+            color: white;
+            padding: 8px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+        .topbar nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin-right: 25px;
+            transition: color 0.3s;
+        }
+        .topbar nav a:hover { color: white; }
+        .haku-pm { color: #ffeb3b !important; font-weight: bold; } /* Highlight Haku Chat */
+
+        /* Main Content */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .hero h1 { margin-top: 0; border-left: 5px solid var(--labour-red); padding-left: 15px; }
+        .rules-notice {
+            background: #fff3f3;
+            border: 1px solid #ffcdd2;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 13px;
+        }
+        .btn-action {
+            background: var(--labour-red);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo and Brand Name -->
+    <header class="main-header">
+        <span class="rose-logo">🌹</span>
+        <span class="brand-text">Labour Connect</span>
+    </header>
+
+    <!-- Navigation Topbar -->
+    <div class="topbar">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Petitions</a>
+            <a href="#">CLP Dropdown</a>
+            <a href="#" class="haku-pm">PMs (Haku)</a>
+        </nav>
+        <div>Account: <strong>Haku Yuzuki</strong> (Verified Member)</div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+        <section class="hero">
+            <h1>Start a Local Petition</h1>
+            <p>Hello! My name is <strong>Haku</strong>! I’m your local admin for the Fakenham & Broadland Labour party. I'm here to help you get your voice heard.</p>
+        </section>
+
+        <div class="rules-notice">
+            <strong>🛡️ Safety Notice:</strong> KiwiFarms-style behaviour, doxxing, and bigotry are strictly banned. Posting anonymously is supported to protect your privacy.
+        </div>
+
+        <form>
+            <p><label><input type="checkbox"> Post this petition anonymously to the branch.</label></p>
+            <button type="button" class="btn-action">Create Petition</button>
+        </form>
+    </div>
+
+</body>
+</html>
